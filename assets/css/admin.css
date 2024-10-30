@@ -1,0 +1,53 @@
+.motionpointexpress-language-list {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.motionpointexpress-language-list-item:focus,
+.motionpointexpress-language-list-item:active,
+.motionpointexpress-language-list-item:hover,
+.motionpointexpress-language-list-item {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	margin:0;
+  padding: 6px;
+	list-style: none;
+  text-decoration: none;
+  color: #2C3338;
+  background-color: #ddd;
+  border: 1px solid #8C8F94;
+  border-radius: 4px;
+}
+.motionpointexpress-language-list-item * {
+	pointer-events: none;
+}
+.motionpointexpress-language-list-item.motionpointexpress-status-error {
+  color: #c00;
+  border-color: #c00;
+  background-color: #fff;
+}
+.motionpointexpress-language-list-item.motionpointexpress-status-warning {
+  color: #b28203;
+  border-color: #b28203;
+  background-color: #fff;
+}
+.motionpointexpress-error {
+  color: #c00;
+}
+.motionpointexpress-warning {
+  color: #b28203;
+}
+#MotionPointExpressCustomLocationWrapper:not(.active) {
+	display: none;
+}
+#MotionPointExpressDebugInfo {
+	display: none;
+}
+#MotionPointExpressDebugToggleBtn.active .motionpointexpress-show,
+#MotionPointExpressDebugToggleBtn:not(.active) .motionpointexpress-hide {
+	display: none;
+}
